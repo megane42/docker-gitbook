@@ -29,12 +29,12 @@ cd /path/to/your/gitbook/root/
 docker run --init --rm -p 4000:4000 -v ${PWD}:/work -w /work megane42/gitbook serve
 ```
 
-Don't forget `--init` , or you can't exit the server by Ctrl-C !
-Node.js app, such as gitbook, ignores SYGTERM when it has PID 1 (https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#handling-kernel-signals).
+* Don't forget `--init` , or you can't exit the server by `Ctrl-C`.
+  * Node.js app, such as gitbook, ignores SYGTERM when it has PID 1 ([see](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#handling-kernel-signals)).
 
 ## Why So Old Gitbook?
 
-* For this bug. https://github.com/GitbookIO/theme-default/issues/28
+* For [this bug](https://github.com/GitbookIO/theme-default/issues/28).
 
 ## License
 
